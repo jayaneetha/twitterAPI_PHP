@@ -2,6 +2,7 @@
 
 echo "<h1>Welcome to Twitter API </h1>";
 
+echo __DIR__;
 require __DIR__ . '/vendor/autoload.php';
 
 require 'setting.php';
