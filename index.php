@@ -2,6 +2,8 @@
 
 echo "<h1>Welcome to Twitter API </h1>";
 
+echo phpinfo();
+
 
 
 
