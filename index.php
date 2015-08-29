@@ -2,10 +2,7 @@
 
 echo "<h1>Welcome to Twitter API </h1>";
 
-echo phpinfo();
-
-
-
+print_r(get_loaded_extensions());
 
 
 //$response_array = json_decode($response);
