@@ -3,7 +3,7 @@
 echo "<h1>Welcome to Twitter API </h1>";
 
 
-require './vendor/autoload.php';
+require 'vendor/j7mbo/twitter-api-php/TwitterAPIExchange.php';
 
 require 'setting.php';
 
