@@ -2,7 +2,11 @@
 
 echo "<h1>Welcome to Twitter API </h1>";
 
-print_r(get_loaded_extensions());
+require __DIR__ . '/vendor/autoload.php';
+
+require 'setting.php';
+
+$twitter = new TwitterAPIExchange($settings);
 
 
 //$response_array = json_decode($response);
