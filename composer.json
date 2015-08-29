@@ -1,0 +1,13 @@
+{
+    "name": "brightron/twitterapi",
+    "require": {
+        "j7mbo/twitter-api-php": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Thejan Rajapakshe",
+            "email": "coder.clix@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
