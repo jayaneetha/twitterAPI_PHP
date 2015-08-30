@@ -1,5 +1,5 @@
 <?php
-require 'TwitterAPIExchange.php';
+require __DIR__ . '/vendor/autoload.php';
 
 require 'setting.php';
 
