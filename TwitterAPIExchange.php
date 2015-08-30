@@ -269,6 +269,7 @@ class TwitterAPIExchange
      */
     public function performRequest($return = true, $curlOptions = array())
     {
+        echo "<br><br>Start Perform ";
         if (!is_bool($return))
         {
             throw new Exception('performRequest parameter must be true or false');
@@ -300,6 +301,8 @@ class TwitterAPIExchange
         }
 
         $feed = curl_init();
+        echo "<br>feed: <br>";
+        print_r($feed);
         curl_setopt_array($feed, $options);
         $json = curl_exec($feed);
 
@@ -311,7 +314,7 @@ class TwitterAPIExchange
         }
 
         curl_close($feed);
-
+        echo "<br><br>end Perform ";
         return $json;
     }
     
