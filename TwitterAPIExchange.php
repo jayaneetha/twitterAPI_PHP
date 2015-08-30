@@ -161,7 +161,8 @@ class TwitterAPIExchange
         }
 
         $this->getfield = '?' . http_build_query($params);
-        
+        echo "get fields<br>";
+        print_r($this);
         return $this;
     }
     
