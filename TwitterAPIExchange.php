@@ -296,8 +296,9 @@ class TwitterAPIExchange
 
         if (($error = curl_error($feed)) !== '') {
             echo "<br>inside <br>";
-
+            print_r($error);
             curl_close($feed);
+            echo "<br>close <br>";
 
             throw new \Exception($error);
         }
