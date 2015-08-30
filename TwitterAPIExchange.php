@@ -252,7 +252,8 @@ class TwitterAPIExchange
         $this->url = $url;
         $this->requestMethod = $requestMethod;
         $this->oauth = $oauth;
-        
+        echo "<br>";
+        print_r($this);
         return $this;
     }
     
