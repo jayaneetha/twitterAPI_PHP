@@ -302,10 +302,13 @@ class TwitterAPIExchange
 
         $feed = curl_init();
         echo "<br>feed: <br>";
-        print_r($feed);
-        curl_setopt_array($feed, $options);
-        $json = curl_exec($feed);
 
+        curl_setopt_array($feed, $options);
+        echo "<br>curl_setopt_array: <br>";
+
+        $json = curl_exec($feed);
+        echo "<br>json: <br>";
+echo $json;
         if (($error = curl_error($feed)) !== '')
         {
             curl_close($feed);
