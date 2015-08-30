@@ -89,6 +89,8 @@ class TwitterAPIExchange
         $this->consumer_key = $settings['consumer_key'];
         $this->consumer_secret = $settings['consumer_secret'];
 
+        echo "cnostructor";
+
     }
 
     /**
