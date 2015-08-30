@@ -292,7 +292,11 @@ class TwitterAPIExchange
         $json = curl_exec($feed);
         echo "<br>json: <br>";
         echo $json;
+        echo "<br>json: <br>";
+
         if (($error = curl_error($feed)) !== '') {
+            echo "<br>inside <br>";
+
             curl_close($feed);
 
             throw new \Exception($error);
