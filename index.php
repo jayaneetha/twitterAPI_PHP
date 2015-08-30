@@ -3,6 +3,8 @@ require './TwitterAPIExchange.php';
 
 require 'setting.php';
 
+error_reporting(E_ALL);
+
 $twitter = new TwitterAPIExchange($settings);
 
 $url = 'https://api.twitter.com/1.1/search/tweets.json';
