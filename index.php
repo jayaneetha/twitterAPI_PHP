@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 
 $twitter = new TwitterAPIExchange($settings);
 
-$url = 'http://api.twitter.com/1.1/search/tweets.json';
+$url = 'https://api.twitter.com/1.1/search/tweets.json';
 $requestMethod = 'GET';
 $getfield = '?q=#nerd&count=30';
 $response = $twitter->setGetfield($getfield)
