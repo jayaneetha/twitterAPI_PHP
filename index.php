@@ -1,5 +1,5 @@
 <?php
-require './TwitterAPIExchange.php';
+require 'TwitterAPIExchange.php';
 
 require 'setting.php';
 
